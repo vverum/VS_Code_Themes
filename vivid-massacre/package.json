@@ -1,7 +1,11 @@
 {
     "name": "vivid-massacre",
-    "displayName": "Vivid-Massacre",
-    "description": "a theme specially created for moments such as 'I will murder the person who wrote it'",
+    "displayName": "Vivid Massacre",
+    "description": "A theme specially created for moments such as 'I will murder the person who wrote it'",
+    "publisher": "vverum",
+    "author": {
+        "name": "Dawid Sobala"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.56.0"
