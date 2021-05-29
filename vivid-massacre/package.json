@@ -1,0 +1,25 @@
+{
+    "name": "vivid-massacre",
+    "displayName": "Vivid-Massacre",
+    "description": "a theme specially created for moments such as 'I will murder the person who wrote it'",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Vivid Massacre",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Vivid Massacre-color-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vverum/VS_Code_Themes.git"
+    }
+}
