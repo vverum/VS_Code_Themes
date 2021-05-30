@@ -199,9 +199,19 @@
 			}
 		},
 		{
+			"name": "Interface",
+			"scope": [
+				"entity.name.type.interface"
+			],
+			"settings": {
+				"foreground": "#66b7f5"
+			}
+		},
+		{
 			"name": "Enum",
 			"scope": [
-				"variable.other.enummember"
+				"variable.other.enummember",
+				"entity.name.type.enum"
 			],
 			"settings": {
 				"foreground": "#66b7f5"
