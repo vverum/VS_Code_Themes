@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "extended.cs",
+	"injectionSelector": "L:source.cs",
+	"patterns": [
+		{
+			"include": "#type-variable-declarations"
+		},
+		{
+			"include": "#delegates-declarations"
+		}
+	],
+	"repository": {
+		"type-variable-declarations": {
+			"patterns": [
+				{
+					"include": "#const-variable-field"
+				}
+			]
+		},
+		"const-variable-field": {
+			"name": "entity.name.variable.const.cs",
+			"match": "(?<!\\.)\\bconst\\b"
+		},
+		"delegates-declarations": {
+			"patterns": [
+				{
+					"include": "#action-delegates-declarations"
+				},
+				{
+					"include": "#func-delegates-declarations"
+				},
+				{
+					"include": "#predicate-delegates-declarations"
+				},
+				{
+					"include": "#delegate-delegates-declarations"
+				}
+			]
+		},
+		"action-delegates-declarations": {
+			"name": "storage.type.delegates.action.cs",
+			"match": "\\bAction(?<=(\\<|\\b))"
+		},
+		"func-delegates-declarations": {
+			"name": "storage.type.delegates.func.cs",
+			"match": "\\bFunc(?<=(\\<|\\b))"
+		},
+		"predicate-delegates-declarations": {
+			"name": "storage.type.delegates.predicate.cs",
+			"match": "\\bPredicate(?<=(\\<|\\b))"
+		},
+		"delegate-delegates-declarations": {
+			"name": "storage.type.delegates.delegate.cs",
+			"match": "\\bdelegate\\b"
+		}
+	}
+}

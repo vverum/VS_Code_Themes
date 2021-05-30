@@ -22,24 +22,11 @@
                 "path": "./themes/Vivid Massacre-color-theme.json"
             }
         ],
-        "languages": [
-            {
-                "id": "csharp",
-                "aliases": [
-                    "c#",
-                    "csharp"
-                ],
-                "extensions": [
-                    ".cs"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
         "grammars": [
             {
-                "language": "csharp",
-                "scopeName": "extendedSource.cs",
-                "path": "./syntaxes/csharp.tmLanguage.json"
+                "scopeName": "extended.cs",
+                "path": "./syntaxes/csharp.tmLanguage.json",
+                "injectTo": [ "source.cs" ]
             }
         ]
     },

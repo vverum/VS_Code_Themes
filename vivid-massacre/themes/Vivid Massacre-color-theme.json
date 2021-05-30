@@ -165,9 +165,19 @@
 			}
 		},
 		{
-			"name": "Constant: null",
+			"name": "Constant: number",
 			"scope": [
-				"constant.language.null"
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#B5CE95"
+			}
+		},
+		{
+			"name": "Constant: null, boolean",
+			"scope": [
+				"constant.language.null",
+				"constant.language.boolean"
 			],
 			"settings": {
 				"foreground": "#F92672"
@@ -218,6 +228,24 @@
 			}
 		},
 		{
+			"name": "Enum member",
+			"scope": [
+				"entity.name.variable.enum-member"
+			],
+			"settings": {
+				"foreground": "#AE81FF"
+			}
+		},
+		{
+			"name": "Delegates",
+			"scope": [
+				"storage.type.delegates"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
+		{
 			"name": "Variable Field",
 			"scope": [
 				"variable.other.object",
@@ -238,11 +266,20 @@
 			}
 		},
 		{
+			"name": "Variable parameter",
+			"scope": [
+				"entity.name.variable.parameter"
+			],
+			"settings": {
+				"foreground": "#d6662a"
+			}
+		},
+		{
 			"name": "Properties",
 			"scope": [
+				"entity.name.variable.property",
 				"variable.other.readwrite",
-				"variable.other.object.property",
-				"entity.name.variable.parameter"
+				"variable.other.object.property"
 			],
 			"settings": {
 				"foreground": "#D9BB3C"
